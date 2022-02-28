@@ -16,10 +16,10 @@ public class accountMain {
         String name = sc.next();
         sc.nextLine();
         Account account = new Account(name, number);
-        System.out.printf("Initial deposit value (s/n)");
+        System.out.printf("Initial deposit value (y/n)");
         char option = sc.next().charAt(0);
         sc.nextLine();
-        if (option == 's') {
+        if (option == 'y') {
             System.out.printf("Enter Deposit value: ");
             double deposit = sc.nextDouble();
             account = new Account(name, number, deposit);
