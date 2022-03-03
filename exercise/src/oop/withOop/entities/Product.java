@@ -5,6 +5,14 @@ public class Product {
     public double price;
     public int quantity;
 
+    public Product() {
+    }
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
     public double TotalValueInStock() {
         return price * quantity;
     }
