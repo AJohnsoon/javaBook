@@ -35,15 +35,12 @@ public class Student {
     }
 
     public void setRoom(int room) {
-        if (room > 9) {
-            System.out.println("Invalid room");
-        }
         this.room = room;
     }
 
     @Override
     public String toString() {
-        return "Busy rooms:\n { name: " + name +
+        return "\n Busy rooms:\n { name: " + name +
                 ", email: " + email +
                 ", room: " + room +
                 " }";

@@ -1,38 +1,51 @@
 package chapter10.array;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 import chapter10.array.entities.Student;
 
 public class example03 {
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("How many rooms will be rented ? ");
-        int roomRented = sc.nextInt();
-        Student[] vect = new Student[roomRented];
+        int roomQuantity;
+        Student[] vect = new Student[10];
+        boolean flag;
 
-        for (int i = 0; i < vect.length; i++) {
+        System.out.printf("How many rooms will be rented ? ");
+
+        do {
+            roomQuantity = sc.nextInt();
+            if (roomQuantity >= 1 && roomQuantity <= 10) {
+                flag = true;
+            } else {
+                System.out.println("\nOnly allowed range 1-10 to set quantity of rooms");
+                System.out.print("Please, pay attention! Enter valid value: ");
+                flag = false;
+            }
+        } while (flag == false);
+
+        for (int i = 0; i < roomQuantity; i++) {
+            System.out.printf("%nRent #%d:%n", i);
             System.out.printf("Name: ");
-            String name = sc.next();
+            String studantName = sc.next();
             sc.nextLine();
             System.out.printf("E-mail: ");
-            String email = sc.next();
+            String studantEmail = sc.next();
             sc.nextLine();
             System.out.printf("Room: ");
-            int room = sc.nextInt();
+            int studentRoom = sc.nextInt();
             sc.nextLine();
             System.out.println();
-            vect[i] = new Student(name, email, room);
+
+            vect[studentRoom] = new Student(studantName, studantEmail, studentRoom);
+
         }
 
         for (Student student : vect) {
-            student.getName();
-            student.getEmail();
-            student.getRoom();
-            System.out.println(student);
+            if (student != null) {
+                System.out.println(student);
+            }
         }
 
         sc.close();
