@@ -96,7 +96,7 @@ public class velhaMain {
 
     }
 
-    public static boolean getPosition(List<velhaMain> list, int id) {
+    public static boolean getMatrizPosition(List<velhaMain> list, int id) {
         velhaMain emp = list.stream().filter(x -> x.id == id).findFirst().orElse(null);
         return emp != null;
     }
