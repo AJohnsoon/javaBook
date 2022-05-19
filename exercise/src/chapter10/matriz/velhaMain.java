@@ -38,35 +38,55 @@ public class velhaMain {
         }
         System.out.println(showMatriz(mat));
 
-        System.out.println("Main Diagonal");
-        for (int k = 0; k < mat.length; k++) {
-            System.out.print(mat[k][k] + " ");
+        if((mat[0][0].equals("x") && mat[1][1].equals("x") && mat[2][2].equals("x"))) {
+            xScore++;
+        }
+        else if((mat[0][0].equals("o") && mat[1][1].equals("o") && mat[2][2].equals("o"))){
+            oScore++;
         }
 
-        //Diagonal Done
-        if((mat[0][0].equals("x") && mat[1][1].equals("x") && mat[2][2].equals("x")) || (mat[0][0].equals("o") && mat[1][1].equals("o") && mat[2][2].equals("o"))){
-            if(response.equals("x")){
-                xScore++;
-            }
-            else if(response.equals("o")){
-                oScore++;
-            }
-            else{
-                draw = "velha";
-            }
+        else if((mat[0][0].equals("x") && mat[0][1].equals("x") && mat[0][2].equals("x"))){
+            xScore++;
         }
-        else if((mat[0][0].equals("x") && mat[0][1].equals("x") && mat[0][2].equals("x")) || (mat[0][0].equals("o") && mat[0][1].equals("o") && mat[0][2].equals("o"))){
-            if(response.equals("x")){
-                xScore++;
-            }
-            else if(response.equals("o")){
-                oScore++;
-            }
-            else {
-                draw = "velha";
-            }
+        else if (mat[0][0].equals("o") && mat[0][1].equals("o") && mat[0][2].equals("o")) {
+            oScore++;
         }
-        //TODO another position
+
+        else if((mat[1][0].equals("x") && mat[1][1].equals("x") && mat[1][2].equals("x"))){
+            xScore++;
+        }
+        else if (mat[1][0].equals("o") && mat[1][1].equals("o") && mat[1][2].equals("o")) {
+            oScore++;
+        }
+        else if((mat[2][0].equals("x") && mat[2][1].equals("x") && mat[2][2].equals("x"))){
+            xScore++;
+        }
+        else if (mat[2][0].equals("o") && mat[2][1].equals("o") && mat[2][2].equals("o")) {
+            oScore++;
+        }
+
+        else if((mat[0][0].equals("x") && mat[1][0].equals("x") && mat[2][0].equals("x"))){
+            xScore++;
+        }
+        else if (mat[0][0].equals("o") && mat[1][0].equals("o") && mat[2][0].equals("o")) {
+            oScore++;
+        }
+
+        else if((mat[0][1].equals("x") && mat[1][1].equals("x") && mat[2][1].equals("x"))){
+            xScore++;
+        }
+        else if (mat[0][1].equals("o") && mat[1][1].equals("o") && mat[2][1].equals("o")) {
+            oScore++;
+        }
+
+        else if((mat[0][2].equals("x") && mat[1][2].equals("x") && mat[2][2].equals("x"))){
+            xScore++;
+        }
+        else if (mat[0][2].equals("o") && mat[1][2].equals("o") && mat[2][2].equals("o")) {
+            oScore++;
+        }
+
+
 
 
         System.out.println();
