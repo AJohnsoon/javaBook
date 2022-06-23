@@ -2,15 +2,16 @@ package chapter13.entities;
 
 import chapter13.entities.enums.WorkerLevel;
 
-import java.awt.font.TextHitInfo;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 
 public class Worker {
     private String name;
     private WorkerLevel level;
-    private  double baseSalary;
+    private double baseSalary;
 
+    private ArrayList<Contract> contract = new ArrayList<>();
 
     public Worker(){}
 
@@ -43,12 +44,21 @@ public class Worker {
         return baseSalary;
     }
 
+    public ArrayList<Contract> getContract() {
+        return contract;
+    }
+
+    public void setContract(Contract contracts) {
+       this.contract.add(contracts);
+    }
+
     @Override
     public String toString() {
-        return "Worker {" +
-                "\nname: '" + name + '\'' +
-                "\nlevel: " + level +
-                "\nbaseSalary: R$" + new DecimalFormat("0.00").format(baseSalary) +
+        return "\nWorker {" +
+                "\n name: '" + name + '\'' +
+                "\n level: " + level +
+                "\n baseSalary: R$" + new DecimalFormat("0.00").format(baseSalary) +
+                "\n Contracts: "+ getContract() +
                 "\n}";
     }
 }

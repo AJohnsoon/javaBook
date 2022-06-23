@@ -3,14 +3,14 @@ package chapter13.entities;
 import java.text.DecimalFormat;
 import java.util.Date;
 
-public class HourContract {
+public class Contract {
     private Date date;
     private double valuePerHour;
     private int hour;
 
-    public HourContract(){}
+    public Contract(){}
 
-    public HourContract(Date date, double valuePerHour, int hour){
+    public Contract(Date date, double valuePerHour, int hour){
         this.date = date;
         this.valuePerHour = valuePerHour;
         this.hour = hour;
@@ -41,16 +41,16 @@ public class HourContract {
     }
 
     public Double totalValue(){
-        return valuePerHour * hour;
+         return valuePerHour * hour;
     }
 
     @Override
     public String toString() {
-        return "HourContract {" +
-                "\ndate: " + date +
-                "\nvaluePerHour: " + valuePerHour +
-                "\nhour: " + hour +
-                "\ntotalValue: "+ new DecimalFormat("0.00").format(totalValue()) +
-                "}";
+        return "\n{" +
+                "   \n date: " + date +
+                "   \n valuePerHour: " + valuePerHour +
+                "   \n hour: " + hour +
+                "   \n totalValue: "+ new DecimalFormat("0.00").format(totalValue()) +
+                "   \n } \n";
     }
 }
