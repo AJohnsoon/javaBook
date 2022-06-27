@@ -41,8 +41,9 @@ public class Contract {
     }
 
     public Double totalValue(){
-         return valuePerHour * hour;
+        return valuePerHour * hour ;
     }
+
 
     @Override
     public String toString() {
