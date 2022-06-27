@@ -1,7 +1,7 @@
 package chapter13;
 
-import chapter13.entities.Comment;
-import chapter13.entities.Post;
+import chapter13.entities.example03.Comment;
+import chapter13.entities.example03.Post;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

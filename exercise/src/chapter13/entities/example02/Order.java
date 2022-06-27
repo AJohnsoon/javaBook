@@ -1,4 +1,4 @@
-package chapter13.entities;
+package chapter13.entities.example02;
 
 import chapter13.entities.enums.OrderStatus;
 

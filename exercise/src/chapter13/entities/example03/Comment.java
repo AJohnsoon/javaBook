@@ -1,4 +1,4 @@
-package chapter13.entities;
+package chapter13.entities.example03;
 
 public class Comment {
     private String text;

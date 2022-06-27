@@ -1,6 +1,6 @@
 package chapter13;
 
-import chapter13.entities.Order;
+import chapter13.entities.example02.Order;
 import chapter13.entities.enums.OrderStatus;
 
 import java.util.Date;

@@ -1,4 +1,4 @@
-package chapter13.entities;
+package chapter13.entities.example03;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

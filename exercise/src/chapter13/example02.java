@@ -10,15 +10,15 @@
 */
 package chapter13;
 
-import chapter13.entities.Contract;
-import chapter13.entities.Department;
-import chapter13.entities.Worker;
+import chapter13.entities.example02.Contract;
+import chapter13.entities.example02.Department;
+import chapter13.entities.example02.Worker;
 import chapter13.entities.enums.WorkerLevel;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class example2 {
+public class example02 {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
