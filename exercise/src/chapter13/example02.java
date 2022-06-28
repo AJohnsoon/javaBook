@@ -1,13 +1,4 @@
-/*
-* Composição:
-*  É um tipo de associação que permite que um objeto conheta outro;
-*  - Relação -> "tem-um" ou "tem-vários"
-*  - Vantagens:
-*       - Organização -> divisão de responsabilidades
-*       - Coesão
-*       - Flexibilidade
-*       - Reuso
-*/
+
 package chapter13;
 
 import chapter13.entities.example02.Contract;
