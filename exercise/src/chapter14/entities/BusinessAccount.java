@@ -27,6 +27,12 @@ public class BusinessAccount extends Account {
     }
 
     @Override
+    public void Withdraw(double amount) {
+        super.Withdraw(amount);
+        balance -= 5.0;
+    }
+
+    @Override
     public String toString() {
         return "BusinessAccount {" +
                 " Number: " + this.getNumber()+
