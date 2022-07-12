@@ -38,7 +38,7 @@ public class Account {
         return balance;
     }
 
-    public void Deposit(double amount){
+    public final void Deposit(double amount){
         balance += amount;
     }
     public void Withdraw(double amount){
