@@ -1,7 +1,7 @@
 package chapter14;
 
-import chapter14.entities.Account;
-import chapter14.entities.BusinessAccount;
+import chapter14.entities.example.Account;
+import chapter14.entities.example.BusinessAccount;
 
 public class example {
     public static void main(String[] args){

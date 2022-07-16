@@ -1,4 +1,4 @@
-package chapter14.entities;
+package chapter14.entities.example;
 
 public class Account {
     private Integer number;

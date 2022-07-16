@@ -1,4 +1,4 @@
-package chapter14.entities;
+package chapter14.entities.example;
 
 public final class SavingsAccount extends Account{
     private Double interestRate;

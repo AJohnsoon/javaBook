@@ -1,4 +1,4 @@
-package chapter14.entities;
+package chapter14.entities.example04;
 
 public class OutsourceEmployee extends Employee{
     private Double additionalCharge;

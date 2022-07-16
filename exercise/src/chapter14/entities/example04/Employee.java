@@ -1,4 +1,4 @@
-package chapter14.entities;
+package chapter14.entities.example04;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

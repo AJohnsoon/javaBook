@@ -1,7 +1,7 @@
 package chapter14;
 
-import chapter14.entities.Employee;
-import chapter14.entities.OutsourceEmployee;
+import chapter14.entities.example04.Employee;
+import chapter14.entities.example04.OutsourceEmployee;
 
 import java.util.ArrayList;
 
