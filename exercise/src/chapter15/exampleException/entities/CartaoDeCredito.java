@@ -1,4 +1,4 @@
-package exampleException.entities;
+package chapter15.exampleException.entities;
 
 import java.time.LocalDate;
 

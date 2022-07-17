@@ -1,4 +1,4 @@
-package exampleException;
+package chapter15.exampleException;
 
 import java.util.ArrayList;
 

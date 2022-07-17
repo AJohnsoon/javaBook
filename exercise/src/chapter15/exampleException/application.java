@@ -1,7 +1,7 @@
-package exampleException;
+package chapter15.exampleException;
 
-import exampleException.entities.CartaoDeCredito;
-import exampleException.entities.Usuario;
+import chapter15.exampleException.entities.CartaoDeCredito;
+import chapter15.exampleException.entities.Usuario;
 
 import java.time.LocalDate;
 
