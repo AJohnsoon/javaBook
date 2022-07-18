@@ -1,4 +1,4 @@
-package chapter08.chapter9.entities;
+package chapter08.chapter09.entities;
 
 public class ProductOOP {
     private String name;

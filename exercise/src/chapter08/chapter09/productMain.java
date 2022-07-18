@@ -1,9 +1,9 @@
-package chapter08.chapter9;
+package chapter08.chapter09;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import chapter08.chapter9.entities.ProductOOP;
+import chapter08.chapter09.entities.ProductOOP;
 
 public class productMain {
     public static void main(String[] args) {

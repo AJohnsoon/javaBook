@@ -1,9 +1,9 @@
-package chapter08.chapter9;
+package chapter08.chapter09;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import chapter08.chapter9.entities.Account;
+import chapter08.chapter09.entities.Account;
 
 public class accountMain {
     public static void main(String[] args) {
