@@ -61,4 +61,14 @@ public class Account {
             throw new BusinessException("Error: Not enough balance");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", number=" + number +
+                ", balance:" + balance +
+                ", withdrawLimit:" + withdrawLimit +
+                '}';
+    }
 }

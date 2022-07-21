@@ -12,7 +12,6 @@ public class example {
         try{
             acc1.Withdraw(accWithdraw1);
             System.out.printf("Novo saldo: %.2f%n", acc1.getBalance());
-
         }
         catch (BusinessException e){
             System.out.println(e.getMessage());
@@ -27,6 +26,10 @@ public class example {
         }
         catch (BusinessException e){
             System.out.println(e.getMessage());
+        }
+        finally {
+            System.out.println(acc1);
+            System.out.println(acc2);
         }
 
     }
