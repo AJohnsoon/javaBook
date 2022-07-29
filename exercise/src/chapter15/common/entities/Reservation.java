@@ -43,12 +43,13 @@ public class Reservation {
         long diffIn = checkIn.getTime();
         long diffOut = checkOut.getTime();
 
-        if(diffIn > diffOut){
-            System.out.println("Invalid parameter: checkIn date greater than checkOut date!");
+        if((diffIn > this.checkIn.getTime() && diffOut > this.checkOut.getTime()) && diffOut >= diffIn){
+            this.checkIn.setTime(diffIn);
+            this.checkOut.setTime(diffOut);
         }
         else{
-            this.checkIn = checkIn;
-            this.checkOut = checkOut;
+            this.checkIn.getTime();
+            this.checkOut.getTime();
         }
     }
     

@@ -10,10 +10,10 @@ public class example02 {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");        
         Reservation objectReservation = new Reservation(1325,  sdf.parse("25/11/2022"), sdf.parse("25/12/2022"));
         try{
-            objectReservation.updatedDates(sdf.parse("20"), sdf.parse("10/12/2021"));
+            objectReservation.updatedDates(sdf.parse("01/10/2022"), sdf.parse("30/10/2022"));
         }
         catch(ParseException e){
-            System.out.println(e);
+            System.out.println("Date formatter error"+ e);
         }
         System.out.println(objectReservation);    
     }
